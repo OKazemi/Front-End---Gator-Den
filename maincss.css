@@ -1,0 +1,502 @@
+.jumbotron{
+    background-color:#2E2D88;
+    color:white;
+}
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.nav-tabs {
+    margin-bottom: 0;
+}
+html, body { 
+  margin:0; 
+  padding:0; 
+  height:100%; 
+}
+
+
+.header{
+	height: 250px;
+	background-image: linear-gradient(#8e04d8, #ab66d1);
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: normal;
+	text-align: center;
+;
+	}
+.link-bar{
+	background: linear-gradient(180deg, #FD6060 0%, rgba(255, 255, 255, 0) 100%), #965CC4;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+.selectors{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: normal;
+	text-align: center;
+
+	color: #000000;
+	}
+.btn{
+	color: #000000
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #6c08a3;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #c4ac75;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #b5861b;
+  color: white;
+}
+
+.sidebar, .sidebar1{
+
+	background: linear-gradient(rgba(140, 52, 188, 0.45), rgba(140, 52, 188, 0.45)), url("f.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	vertical: 100%;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: normal;
+	text-align: center;
+	height: calc(100vh - 250px);
+	color: #FFF500;
+	}
+
+.sidebar1
+{
+	height: calc(100vh - 113px) ;
+}
+.middle img
+{
+	text-align: center;
+	width: 60%;
+}
+.middle p
+{
+	margin-bottom: 0;
+	font-size: 25px;
+	text-align: left;
+}
+.middle .row
+{
+	text-align: center;
+	padding: 33px 0;
+	border-top: 1px solid black;
+}
+
+.left button
+{
+
+	width: 100%;
+	min-height: 65px;
+    border: 1px solid black;
+    font-weight: bold;
+    border-bottom: none;
+    color: black;
+}
+.left .pro
+{
+	background: #ffffff;
+}
+
+.left .user
+{
+	background: #c4c4c4;
+}
+.left .rev
+{
+	background: #8e8d8d;
+}
+
+.contact-btn
+{
+	width: 137px;
+    height: 100px;
+    border-radius: 64px / 50px;
+    background: #ffa564;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+
+
+.contact-btn.msg a
+{
+	background: none;
+	color: black;
+	border: none;
+	font-size: inherit;
+}
+
+/* Message Popup */
+.form
+{
+	width: 100%;
+	color: #535353;
+}
+.form h2
+{
+	text-align: center;
+}
+.form textarea
+{
+	width: 100%;
+	background: none;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px 5px;
+    color: #535353;
+    font-size: 14px;
+    resize: vertical;
+}
+input[type="date"]::before{
+    content: attr(placeholder) ": ";
+}
+input[type="date"]:focus::before {
+    content: "" !important;
+}
+
+input[type="time"]::before{
+    content: attr(placeholder) ": ";
+}
+input[type="time"]:focus::before {
+    content: "" !important;
+}
+.popup-container
+{
+	display:none;
+	position: absolute;
+    background-color: rgba(0, 0, 0, 0.48);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+ }
+.popup-wrapper
+{
+	width: 475px;
+    background-color: #f6f4f5;
+    top: 50%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding-bottom: 30px;
+}
+.popup-head
+{
+	padding: 10px;
+	margin-top: 40px;
+	margin-bottom: 90px;
+}
+.popup-content
+{
+	padding: 15px;
+}
+.send-btn
+{
+	margin-top: 30px;
+    text-align: center;
+}
+.send-btn a
+{
+	background: #b5861b;
+	color: white;
+	padding: 15px 80px;
+	text-decoration: none;
+}
+
+#close a
+{
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+	color: black !important;
+	text-decoration: none;
+	margin-top: -30px;
+}
+
+.side-links
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: bold;
+    line-height: 45px;
+
+}
+.side-links a
+{
+	text-decoration: none;
+	font-size: 30px;
+	color: #FFF500;
+}
+.side-links a, .side-links p {
+    text-decoration: none;
+    font-size: 30px;
+    color: #FFF500;
+    /* float: left; */
+    width: 100%;
+    background: grey;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+/* === Slider Page === */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  color: black !important;
+  font-size: 150px !important;
+  top: 40% !important;
+  background: none !important;
+  text-decoration: none !important;
+}
+.slider-content
+{
+	margin-top: 50px;
+}
+
+.slider-content .fade
+{
+	opacity: 1;
+}
+.prev
+{
+	left: -150px;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: -150px;
+  	border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slide-title, .des-text
+{
+	text-align: center;
+}
+.bttn
+{
+	padding: 15px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #236123;
+    border: none;
+    color: white;
+}
+.rjct
+{
+	background: #8e2626;
+	padding: 15px 45px;
+	margin-left: 195px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* === Media Queries === */
+
+@media (max-width: 992px)
+{
+	.side-links
+	{
+		width: 80%;
+	}
+	.prev, .next
+	{
+		font-size: 110px !important;
+	}
+	.prev
+	{
+		left: -95px !important;
+	}
+	.next
+	{
+		right: -95px !important;
+	}
+	.side-links
+	{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.middle img
+	{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.slideshow-container
+	{
+		max-width: 100%;
+	}
+	.slide-title h1, .des-text h1
+	{
+		font-size: 30px;
+	}
+	.prev, .next
+	{
+    	position: absolute !important;
+    	top: 48% !important;
+    }
+    .prev
+	{
+		left: 0 !important;
+	}
+	.next
+	{
+		right: 0 !important;
+	}
+	.bttn
+	{
+		margin-bottom: 20px;
+	}
+	.side-links
+	{
+		width: 60%;
+	}
+}
+
+@media (max-width: 480px)
+{
+	h1
+	{
+		font-size:	25px;
+	}
+	.rjct
+	{
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 320px)
+
+	{
+
+	h1
+	{
+		font-size: 18px;
+	}
+	.topnav a
+	{
+		padding: 14px 9px;
+	}
+	.bttn
+	{
+    	padding: 10px 25px;
+    	font-size: 16px;
+    	margin-top: 20px;
+    }
+    .rjct
+    {
+    	margin-left: 0;
+    	display: block;
+    	padding: 10px 34px !important;
+	}
+    .prev, .next
+    {
+    	font-size: 50px !important;
+    	top: 54% !important;
+
+    }
+    .popup-wrapper
+    {
+    width: 290px;
+	}
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Gator Dens - Results</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/uilib/maincss.css">
+<style type="text/css" media="all">
+@import "maincss.css";
+body{
+	margin: 0;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+<div class ="header">
+<h1>SFSU Software Engineering Project</h1>
+<h1>CSC 648-848, Spring 2019</h1>
+<h1>For Demonstration Only</h1>
+ <div class="topnav">
+  <a  href="/home"><image src="/uilib/GatorDensLogo.png" height="30px" width="30px"></image></a>
+  <a href="/dashboard">Dashboard</a>
+  <a href="/post_new">Post</a>
+  <a href="/about">About</a>
+  <a class="active" href="/login">Login</a>
+  <a href="/inbox">Inbox</a>
+</div>
+<div class="container">
+<div class="row">
+<div class="search-box selectors">
+<form action="/results" method="POST">
+        <div class="search-box">
+            <select name="type">
+              <option value="">Pick Type</option>
+              <option value="House" {% if type=='House' %} selected="selected" {% endif %}>House</option>
+              <option value="Apartment" {% if type=='Apartment' %} selected="selected" {% endif %}>Apartment</option>
+              <option value="Room" {% if type=='Room' %} selected="selected" {% endif %}>Room</option>
+            </select>
+            <input type="text" maxlength="40" name="query" placeholder="Type to search" {% if query!='' %} value={{query}} {% endif %}>
+            <button class="btn" type="submit">Search</button>
+         </div>
+    </form>
+ </div>
+ </div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-9 midbar">
+<p>Showing {{data|length}} out of {{data|length}}</p>
+
+{% for prop in data %}
+
+<div class="row" style="border-bottom:thin solid #000000">
+        <div class="col-sm-6">
+         <a href="/get_property/{{prop.id}}"><img src={{prop.Thumbnail}}></a>
+        </div>
+
+        <div class="col-sm-6">
+          <p>{{prop.Address}}</p> <!-- Property address goes here -->
+          <p>{{prop.Description}}</p>
+          <p>{{prop.Price}}</p>
+		  <p>BR: {{prop.Rooms}}</p>
+		  <p>Bath: {{prop.Baths}}</p>
+      </div>
+  </div>
+
+{% endfor %}
+</table>
+</div>
+<div class="col-sm-3 extendright">
+<p><div class="side-links">
+      <h1>Quick links</h1>
+      <p><a href="http://www.sfsu.edu/~sfsumap/">SFSU Campus Map</a></p>
+      <p><a href="#">More SFSU Links</a></p>
+  </div></p>
+</div>
+</div>
+</div>
+
+<!-- page-header adds space aroundtext and enlarges it. It also adds an underline at the end -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
